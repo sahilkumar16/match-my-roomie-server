@@ -59,19 +59,22 @@ function Quiz() {
       let token = localStorage.getItem("token");
       token = JSON.parse(token)?.authToken;
 
-      const response = await fetch("http://localhost:8000/addpreference", {
-        // http://localhost:8000/addpreference
-        method: "POST",
-        // body: JSON.stringify({
-        //   questionIndex: currentQuestionIndex,
-        //   selectedOption: selectedOption,
-        // }),
-        body: JSON.stringify(formData),
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        "https://server-mmr.onrender.com/addpreference",
+        {
+          // http://localhost:8000/addpreference
+          method: "POST",
+          // body: JSON.stringify({
+          //   questionIndex: currentQuestionIndex,
+          //   selectedOption: selectedOption,
+          // }),
+          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (response.ok) {
         const result = await response.json();

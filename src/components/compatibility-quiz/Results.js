@@ -15,7 +15,7 @@ function Results() {
     setIsNavigating(true); // Start navigation state
     // Fetch matched users data from API
     axios
-      .get(`http://localhost:8000/dashboard/${userId}`)
+      .get(`https://server-mmr.onrender.com/dashboard/${userId}`)
       .then((response) => {
         console.log(response);
         const matchedUsersData = response.data.profiles;

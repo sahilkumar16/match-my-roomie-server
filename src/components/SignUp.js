@@ -38,7 +38,7 @@ function SignUp() {
     setIsNavigating(true); // Start navigation state
     console.log(formData);
     try {
-      const url = "http://localhost:8000/user/signup";
+      const url = "https://server-mmr.onrender.com/user/signup";
       const { data: res } = await axios.post(url, formData);
       console.log(res);
 

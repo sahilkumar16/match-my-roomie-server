@@ -138,14 +138,17 @@ function CreateProfile() {
         let token = localStorage.getItem("token");
         token = JSON.parse(token)?.authToken;
 
-        const response = await fetch("http://localhost:8000/createprofile", {
-          method: "POST",
-          body: JSON.stringify(form),
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-        });
+        const response = await fetch(
+          "https://server-mmr.onrender.com/createprofile",
+          {
+            method: "POST",
+            body: JSON.stringify(form),
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
 
         if (response.ok) {
           const result = await response.json();
