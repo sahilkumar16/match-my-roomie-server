@@ -3,7 +3,7 @@ import "../assets/styles/Main.css";
 import Navbar from "./Nav";
 
 function Main() {
-  const url = " ";
+  const url = "https://server-mmr.onrender.com/";
   useEffect(() => {
     fetch(url).then((res) => {
       console.log(res);
