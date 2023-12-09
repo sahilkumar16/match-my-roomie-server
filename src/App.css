@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1200px;
+  height: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.container {
+    width: 100%;
+    /* height: 100vh;  */
+    display: flex;
+    /* height: 720px; */
+}
+
+.back-button {
+    border: transparent;
+    background: transparent;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+    font-family: Medium;
+    text-align: left;
+}
+
+.back-button i {
+    margin-right: 25px;
+}
+
+.progress-bar {
+    margin: 3% 0 7% 12%;
+}
+
+/* .profile-info-side { */
+.info-side {
+    background-color: #C7DBEE;
+    /* width: 60%; */
+    padding: 26.5% 6.5% 25% 4%;
+    height: auto;
+}
+
+.info-side img {
+    width: 110%;
+    /* margin: auto; */
+    float: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.continue-button {
+  letter-spacing: 0.8px;
+  font-family: Bold;
+  font-size: 1.2rem;
+  background-color: #677684;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 45px 12px;
+}
+
+.skip-button {
+  letter-spacing: 0.8px;
+  font-family: Bold;
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  color: #4488C5;    
+  border-radius: 10px;
+  padding: 10px 45px 12px;
+}
+
+.continue-button.filled {
+  background-color: #4488C5; 
+}
+
+/* .inner-h2 {
+    font-size: 2rem;
+    font-family: Medium;
+}
+
+.inner-h3 {
+    font-size: 1.5rem;
+    font-family: Regular;
+    margin-top: 0;
+}
+
+.inner-p {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+} */
+
+
+@font-face {
+  font-family: "Dark";
+  /*Can be any text*/
+  src: local("Santoshi"),
+    url("../src/fonts/Satoshi-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Light";
+  /*Can be any text*/
+  src: local("Santoshi"),
+    url("../src/fonts/Satoshi-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Regular";
+  /*Can be any text*/
+  src: local("Santoshi"),
+    url("../src/fonts/Satoshi-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bold";
+  /*Can be any text*/
+  src: local("Santoshi"),
+    url("../src/fonts/Satoshi-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Medium";
+  /*Can be any text*/
+  src: local("Santoshi"),
+    url("../src/fonts/Satoshi-Medium.ttf") format("truetype");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

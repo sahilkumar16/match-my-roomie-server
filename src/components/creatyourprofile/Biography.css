@@ -1,0 +1,72 @@
+#first-bio, #second-bio, #third-bio {
+    background-color: #4488C5;
+}
+.biography-info-container {
+    padding: 13% 9% 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#fourth-bio {
+    background-color: var(--component-light-gray, #E6E6E6);
+}
+
+.biography-form {
+    text-align: left;
+    margin: 2% 0 2%;
+}
+
+.biography-label-label {
+    font-family: Bold;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;      
+}
+
+.fixed-textarea {
+  font-size: 1rem;
+  width: 100%;
+  height: auto;
+  resize: none; 
+  font-family: Regular;
+  padding: 2% 3%;
+  border-radius: 5px;
+  border:1px solid #717171;
+  margin-top: 10px;
+}
+
+.inner-h2, .inner-h3, .inner-p {
+    text-align: left;
+    /* margin-left: 12%;
+    margin: 5% 0 5% 12%;    */
+}
+
+.biography-h2 {
+    margin-top: 50px;
+    font-family: Medium;
+    font-size: 2rem;
+    letter-spacing: 0.72px;
+}
+
+.biography-h3 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: Medium;
+    letter-spacing: 0.56px;
+}
+
+.biography-p {
+    display: flex;
+    flex-direction: column;
+    font-family: Regular;
+    font-size: 1.05rem;
+    letter-spacing: 0.56px;
+}
+
+.skip-button {
+    margin-left: 10%;
+}

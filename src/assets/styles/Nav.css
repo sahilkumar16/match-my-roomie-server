@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.logo {
+    display: flex;
+    margin-left: -180px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    margin: 18px;
+}
+
+.logo h2 {
+    color: #4488c5;
+    margin-top: 23px;
+    font-family: regular;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nav a {     
+    color: #000000; 
+    font-size: 1.1rem;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 27px 20px 0;
+    font-family: medium;
+    cursor: pointer;
+}
+
+.nav a:focus {
+    text-decoration: underline;
+}
+
+.sign-in button {
+    margin-right: -190px;
+    font-size: 1rem;
+    border: transparent;
+    background-color: transparent;
+    margin-top: 29px;
+    font-family: medium;
+}
+
+.sign-in button:focus {
+    text-decoration: underline;
+}
